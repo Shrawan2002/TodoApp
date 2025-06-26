@@ -42,7 +42,7 @@ export default function Todo(){
             <ul>
                 {
                     newTask.map((task)=>{
-                        return <li key={task.id} style={task.isDone?{textDecoration:" blue qline-through"}:{}}>
+                        return <li key={task.id} style={task.isDone?{textDecoration:" blue line-through"}:{}}>
                             <span>{task.task}</span>
                         <button onClick={()=>handleDelete(task.id)} className="del">Delete</button>
                         <button id="mark" onClick={()=>handleMark(task.id)}>Mark As Done</button>
